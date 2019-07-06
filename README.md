@@ -1,6 +1,6 @@
-# Obtendo features das melhores músicas do Spotify
+# Obtendo features das músicas mais populares de um artista no Spotify
 
-Script para obtenção de features das melhores músicas de um artista pela API do Spotify em formatos JSON e CSV. 
+Script para obtenção de features músicas mais populares de um artista pela API do Spotify em formatos JSON e CSV.
 
 ## Objetivo
 Analisar diversas características da música e visualizar graficamente como estão distrubuídos esses dados.
@@ -25,6 +25,11 @@ A URI do Spotify (Uniform Resource Indicator) é um link que você pode encontra
   <img src="https://i.ibb.co/mJ4Z1Ww/nirvana2.png" width="550">
 </p>
 
+4. As 10 músicas mais populares
+<p>
+  <img src="https://i.ibb.co/rbzZjy5/nirvana3.jpg" width="550">
+</p>
+
 ### Running
 1. Clone esse repo
 ```
@@ -37,7 +42,7 @@ $ cd features-spotipy/
 $ python3 obter_dados.py [URI]
 ```
 
-3. Dados
+3. Dados das músicas mais populares
 ```
 features_nirvana.csv
 features_nirvana.json
