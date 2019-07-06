@@ -1,6 +1,6 @@
 # Obtendo features das músicas mais populares de um artista no Spotify
 
-Script para obtenção de features músicas mais populares de um artista pela API do Spotify em formatos JSON e CSV.
+Script para obtenção de features das músicas mais populares de um artista pela API do Spotify em formatos JSON e CSV.
 
 ## Objetivo
 Analisar diversas características da música e visualizar graficamente como estão distrubuídos esses dados.
