@@ -17,9 +17,7 @@ while True:
     except:
         print('Informe a URI')
         sys.exit()
-    else:
-        break
-
+        
 # Obtendo nome do artista
 artist = sp.artist(uri)
 artist = artist['name'].replace(' ','_')
