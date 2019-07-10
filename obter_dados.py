@@ -11,7 +11,14 @@ client_credentials_manager = SpotifyClientCredentials(client_id = 'CLIENT_ID',
 sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
 
 # Argumento
-uri = sys.argv[1]
+while True:
+    try:
+        uri = sys.argv[1]
+    except:
+        print('Informe a URI')
+        sys.exit()
+    else:
+        break
 
 # Obtendo nome do artista
 artist = sp.artist(uri)
