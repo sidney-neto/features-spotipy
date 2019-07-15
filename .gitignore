@@ -1,0 +1,10 @@
+# Git Folder
+.git/
+
+# Python Cache
+__pycache__/
+
+# Vscode Folder
+.vscode/
+
+
