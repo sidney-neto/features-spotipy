@@ -34,8 +34,8 @@ if __name__ == "__main__":
     while True:
         try:
             uri = sys.argv[1]
-            spotify = autentica('fe87f2441ae24a409617ab297dfc8579',
-                                '60e422252f744b02b2919bdd44f88245')
+            spotify = autentica('CLIENT_ID',
+                                'CLIENT_SECRET')
             artista = nome_artista(spotify, uri)
             features = features_top_tracks(spotify, uri)
             converte_csv(features, artista)
