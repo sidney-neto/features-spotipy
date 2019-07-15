@@ -34,15 +34,15 @@ if __name__ == "__main__":
     while True:
         try:
             uri = sys.argv[1]
-            spotify = autentica('CLIENT_ID',
-                                'CLIENT_SECRET')
+            spotify = autentica('fe87f2441ae24a409617ab297dfc8579',
+                                '60e422252f744b02b2919bdd44f88245')
             artista = nome_artista(spotify, uri)
             features = features_top_tracks(spotify, uri)
             converte_csv(features, artista)
             converte_json(features, artista) 
             break   
         except spotipy.oauth2.SpotifyOauthError: 
-            print('Informe o Client ID & Client Secret.')
+            print('Client ID e Secret inválido.')
             sys.exit()
         except IndexError: 
             print('Informe a URI do Artista.')
